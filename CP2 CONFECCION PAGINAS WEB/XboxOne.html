@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor {
+            margin: 0 auto;
+            max-width: 90%;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+        
+        #dh2, #dh3 {
+            padding: 5% 0 0 1%;
+        }
+        nav, #interno {
+            display: flex;
+        }
+        nav {
+            justify-content: space-around;
+        }
+        #derecha, #izquierda {
+            flex: 0 0 20%;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+        header, nav, #izquierda, section, #derecha, footer {
+            padding: 5px;
+        }
+        header, footer {
+            background-color: #666;
+            color: #fff;
+        }
+        nav {
+            background-color: #aaa;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        #izquierda a, #derecha a {
+            text-decoration: none;
+            color: #000;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        section {
+            flex: 1 1 60%;
+        }
+        
+        @media (max-width: 411px) {
+            nav {
+                flex-wrap: wrap;
+            }
+            main#principal {
+                flex-direction: column;
+            }
+            #izquierda {
+                order: 3;
+            }
+            #derecha {
+                order: 2;
+            }
+            #section {
+                order: 1;
+            }
+            #izquierda, #derecha {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+            }
+            /* aside p::after {
+                content: " -";
+            }
+            aside p:last-child::after {
+                content: "";
+            } */
+            .div_header  {
+            width: 30%;
+            flex-direction: column;
+            align-items: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <main id="contenedor">
+
+        <header>
+            <div class="div_header" > <img src="img/minecraft_logo_icon_168974.png" alt="" style="max-width: 50%;"></div>
+            <div class="div_header" id="dh2"> <h1>Mi sitio web</h1></div>
+            <div class="div_header" id="dh3"> <h2>Vivamus sagittis lacus vel augue laoreet</h2></div>
+            
+        </header>
+
+        <nav>
+
+            <p><a href="#">Inicio</a></p>
+            <p><a href="#">Proyectos</a></p>
+            <p><a href="#">Artículos</a></p>
+            <p><a href="#">Conceptos</a></p>
+            <p><a href="#">Realizaciones</a></p>
+            <p><a href="#">Clientes</a></p>
+            <p><a href="#">Ideas</a></p>
+            <p><a href="#">Contacto</a></p>
+
+        </nav>
+
+        <main id="interno">
+            <aside id="izquierda">
+
+                <h3>Enlaces</h3>
+                <p><a href="#">Enlace 1</a></p>
+                <p><a href="#">Enlace 2</a></p>
+                <p><a href="#">Enlace 3</a></p>
+                <p><a href="#">Enlace 4</a></p>
+                <p><a href="#">Enlace 5</a></p>
+                <p><a href="#">Enlace 6</a></p>
+
+            </aside>
+            <section>
+
+                <article>
+                    <h2>Título 1</h2>
+                    <p>Ambitioni dedisse scripsisse...</p>
+                </article>
+                <article>
+                    <h2>Título 2</h2>
+                    <p>Petierunt uti sibi...</p>
+                </article>
+                <article>
+                    <h2>Título 3</h2>
+                    <p>Quisque ut dolor gravida...</p>
+                </article>
+            </section>
+            <aside id="derecha">
+                <h3>Articles</h3>
+                <p><a href="#">Artículo 1</a></p>
+                <p><a href="#">Artículo 2</a></p>
+                <p><a href="#">Artículo 3</a></p>
+                <p><a href="#">Artículo 4</a></p>
+            </aside>
+        </main>
+        <footer>
+            <p>Qui ipsorum...</p>
+        </footer>
+    </main>
+</body>
+</html>
