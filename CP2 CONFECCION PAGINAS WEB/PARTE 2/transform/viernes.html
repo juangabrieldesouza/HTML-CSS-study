@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-left: 200px;
+        }
+       /* .rotar{
+            transform-origin: left top;
+            transform: rotate(35deg)
+        }*/
+        #cont1:hover{
+            transform-origin: left top;
+            transform:rotate(35deg);
+        }
+        #cont2:hover{
+            transform: scale(1.1);
+            transform: translate(250px,250px);
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+            
+        }
+        #cont3:hover{
+            transform: skew(20deg)
+        
+           
+        }
+        #desplazamiento{
+            position:absolute;
+            left: 220px;
+            top:300px;
+            transition-property: left;
+            transition-duration: 3s;
+        }
+        #desplazamiento:hover{
+
+            left: 280px;
+        }
+        p.texto {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }
+        #multiple {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 200px;
+            height: 60px;
+            background-color: darkblue;
+            transition: width 3s linear, height 2s linear 3s, opacity 4s linear 6s;
+        }
+        #multiple:hover {
+            width: 400px;
+            height: 120px;
+            opacity: .3;
+        }
+        #menu li {
+            list-style: none;
+
+        }
+        #menu li a {
+            display: block;
+            float: left;
+            width: 100px;
+            padding: 3px;
+            margin-right: 20px;
+            border: 1px solid #333;
+            background-color: lightyellow;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Referencias</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="rotar" id="cont1"></div>
+    <div id="cont2">
+        <img src="Johannes-Gutenberg.jpg">
+    </div>
+    <div id="cont3">
+        <img src="Johannes-Gutenberg.jpg">
+    </div>
+    <div id="desplazamiento">
+        <img src="Johannes-Gutenberg.jpg">
+    </div>
+    <div id="multiple">
+        <p class="texto"> lorem algo pues hoy</p>
+    </div>
+
+
+
+    
+</body>
+</html> 

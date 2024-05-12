@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor {
+            margin: 0 auto;
+            max-width: 980px;
+
+        }
+        nav {
+           flex-wrap: wrap; 
+        }
+        header{
+            display: flex;
+            
+        }
+        header h2 {
+            padding-top: 3%;
+            padding-left: 45%;
+        }
+        header h1 {
+            padding-right: 390px;
+        }
+        header img {
+            max-width: 20%;
+            justify-content: space-around;
+        }
+        nav, #contenedor2{
+            display: flex;
+        }
+        nav{
+            justify-content: space-around;
+        }
+        #derecha, #izquierda{
+            flex: 0 0 20%;
+        }
+        section {
+            flex: 1 1 60%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        section article {
+            justify-content: space-around;
+            
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+        header, nav, #izquierda, section, #derecha, footer {
+            padding: 5px;
+            
+        } 
+        #art1, #art2 {
+            margin: 5px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+        }
+        article p {
+            padding: 5px;
+        }
+        article img {
+            padding: 5px;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+        }
+        footer {
+            background-color: gray;
+            color: #fff;
+        }
+        nav {
+            background-color: #aaa;
+        }
+        nav a {
+            text-decoration: none;
+            color: #000;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        #izquierda, #derecha {
+            background-color: #eee;
+        }
+        #izquierda a, #derecha a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        
+        p {
+            font-size: 16px;
+        }
+
+
+        @media (max-width: 415px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+            main{
+                flex-direction: column;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+            section article {
+                flex-direction: column;
+            }
+            section img {
+                width: 100%;
+            }
+            aside {
+                display: none;
+            }
+
+            
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <main id="contenedor">
+        <header>
+            <div><img src="img/LEGO_logo.png" alt=""></div>
+            <div><h1>Examen</h1></div>
+        </header>
+        <nav>
+            <p><a href="#">Inicio</a></p>
+            <p><a href="#">Proyectos</a></p>
+            <p><a href="#">Articulos</a></p>
+            <p><a href="#">Conceptos</a></p>
+            <p><a href="#">Realizaciones</a></p>
+            <p><a href="#">Clientes</a></p>
+        </nav>
+        <main id="contenedor2">
+            <aside id="izquierda">
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum, atque ipsa consectetur assumenda quaerat suscipit corrupti mollitia temporibus odit minima at, explicabo, rerum sequi? Facere, veritatis labore. Corporis, recusandae.</p></div>
+                <div><img src="img/pexels-pixabay-371924.jpg" alt="" style="max-width: 90%;"></div>
+            </aside>
+            <section>
+                <article id="art1">
+                    <div><img src="img/mods-create-minecraft.webp" alt="" style="max-width: 80%;"></div>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nemo illo est pariatur amet quis a. Excepturi laborum reiciendis facilis, cum nisi eaque quasi eos, quaerat consequuntur, vel maxime dolor?</p></div>
+                    
+                </article>
+                <article id="art2">
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis quis sint eum quasi ex, error distinctio? Adipisci in provident tempore, quae possimus doloribus ipsam et ipsa aspernatur dolorum expedita.</p></div>
+                    <div><img src="img/herobrine.jpg" alt="" style="max-width: 95%;"></div>
+                </article>
+
+
+
+            </section>
+            <aside id="derecha">
+                <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique doloremque expedita mollitia, non eligendi laudantium numquam, magni vitae animi ea, reprehenderit illum laborum harum minima a qui enim excepturi rem?</p></div>
+                <div><img src="img/to_mc.png" alt="" style="max-width: 90%;"></div>
+            </aside>
+
+
+        </main>
+        <footer>
+            <p>Juan Gabriel de Souza</p>
+        </footer>
+
+
+    </div>
+</body>
+</html>

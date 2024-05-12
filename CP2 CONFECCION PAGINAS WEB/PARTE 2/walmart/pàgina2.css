@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: white;
+}
+header {
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    display: flex;
+    text-decoration: none;
+    margin: 15px;
+}
+nav p a {
+    text-decoration: none;
+    margin: 15px;
+}
+button {
+    flex: 0 0 20%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: greenyellow;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+section#sectionuno h1 {
+    font-size: 50px;
+    color: blue;
+    padding-top: 30px;
+    padding: 30px;
+}
+#articleuno {
+    padding: 100px;
+    flex-direction: row;
+    
+}
+#articleuno p {
+    font-size: 16px;
+}
+#sectionuno {
+    display: flex;
+    align-items: center;
+}
+#textobajo h1 {
+    padding: 40px;
+    color: rgb(17, 17, 117);
+    font-size: 30px;
+    
+}
+#textobajo p {
+    padding: 20px;
+}
+#pnegrita {
+    font-weight: bold;
+}
+#contenedorbajo {
+    background-color:white;
+}
+#articleimg div img {
+    padding: 15px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#articleimg {
+    display: flex;
+    align-items: center;
+    
+}
+#sectiondos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(93, 93, 212);
+    padding: 30px;
+}
+footer {
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+}
+#divuno {
+    padding-top: 50px;
+    margin-left: 20px;
+    color: yellow;
+}
+#divdos ul li {
+    list-style: none;
+    padding-top: 10px;
+    
+}
+#divdos a {
+    text-decoration: none;
+    color:white
+    
+}
+#divdos a h3 {
+    color: yellow;
+}
+
+
