@@ -1,0 +1,254 @@
+body {
+    margin: 0 auto;
+    max-width: 70%;
+    background: linear-gradient(
+    360deg,
+    rgba(15, 37, 110, 0) 0%,
+    rgba(66, 108, 214, 1) 70%);
+    background-blend-mode: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header{
+    display: flex;
+    background-image: url(img/Diseño.jfif);
+    align-items: center;
+    height: 25%;
+    border-radius: 30px 30px 0 0;
+    margin-top: 3%;
+    
+}
+
+.header_h1 {
+    flex: 1 1 50%;
+    color: white;
+    text-decoration: underline;
+    padding-left: 5%;
+}
+
+.busqueda {
+    flex: 0 0 25%;
+    justify-content: end;
+    
+}
+
+nav {
+    display: flex;
+    
+    padding-top: .2px;
+    padding-bottom: 1.1%;
+    padding-right: 400px;
+    height: 30px;
+    background-color: rgb(7, 7, 80);
+}
+
+.nav_container {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_container li a {
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: rgb(14, 14, 107);
+}
+
+.nav_container li a:hover {
+    background-color: azure;
+    color: chocolate;
+}
+
+.nav_container a {
+    text-decoration: none;
+    color: azure;
+}
+
+.contenedor {
+    padding-top: 20px;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 100px;
+
+}
+
+.page {
+    flex: 0 0 80%;
+    padding: 0 0 0 30px ;
+}
+
+.aside {
+    flex: 1 1 20%;
+    margin: 0 10px 10px 0;
+    border-radius: 0 0 10px 0;
+}
+
+.article_page {
+    padding-bottom: 70px;
+}
+.article_page h1 {
+    background-color: rgb(94, 141, 227);
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 8px;
+    align-items: center;
+}
+
+.page_bajo {
+    display: flex;
+    padding-right: 50%;
+   
+    justify-content: space-around;
+}
+.page_bajo p {
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 2%;
+    margin-top: -15px;
+    color: rgb(33, 63, 136);
+    border-bottom: 1px solid #2672dc;
+    cursor: pointer;
+}
+
+.page_des {
+    text-align: justify;
+    width: 90%;
+    
+}
+
+.read {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.aside {
+    background-color: rgb(178, 212, 250);
+    border-radius: 0 20px 20px 0;
+    
+}
+
+.aside_page div h4{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #2672dc;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.aside_page {
+    
+    display: flex;
+    flex-direction: column;
+}
+.aside_sobre {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.aside_page p a, .aside_page p{
+    justify-items: flex-start;
+    padding: 2px 1px 0 4px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.aside_page p {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.aside_page p:hover {
+    background-color: #c8d9f2;
+    font-weight: bold;
+}
+
+.bajo {
+    width: 80%;
+    background: linear-gradient(
+    42deg,
+    rgba(66, 108, 214, 1) 0%,
+    rgba(15, 37, 110, 0) 11%
+  );
+  background-blend-mode: normal;
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    padding: 20px;
+    border-radius: 0 0 0 20px;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0 auto;
+        max-width: 100%;
+        background: linear-gradient(
+        360deg,
+        rgb(64, 64, 64) 0%,
+        rgb(84, 84, 84) 70%);
+        background-blend-mode: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    .aside {
+        display: none;
+    }
+    .header {
+        flex-direction: column;
+        order: 1;
+        height: 120px;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    .busqueda {
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        margin-bottom: 200px;
+        display: block;
+        width: 100%;
+        background-color: rgb(14, 14, 107);
+        padding-right: 0;
+        order: 2;
+    }
+    .nav_container ul {
+        width: 100%;
+    }
+    .nav_container li{
+        padding: 7px;
+        
+    }
+    .nav_container {
+        
+        flex-direction: column;
+        background-color: rgb(14, 14, 107);
+        
+    }
+    .page {
+        
+        order: 3;
+        background-color: gray;
+        margin-top: -20px;
+        flex: 0 0 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .article_page h1 {
+        
+        color: #2672dc;
+        background-color: #c8d9f2;
+    }
+    .page_bajo {
+        padding: 0;
+    }
+}
